@@ -14,4 +14,4 @@ RUN apt-get clean && \
 
 EXPOSE 137/udp 138/udp 139 445
 
-ENTRYPOINT ["smbd --foreground --log-stdout --no-process-group"]
+ENTRYPOINT ["smbd", "--foreground", "--log-stdout", "--no-process-group"]
