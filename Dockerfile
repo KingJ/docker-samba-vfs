@@ -4,8 +4,9 @@ RUN \
  apt-get update && \
   apt-get install -y \
     samba \
-    samba-vfs-modules \
-  apt-get clean && \
+    samba-vfs-modules
+
+RUN apt-get clean && \
   rm -rf \
     /tmp/* \
     /var/lib/apt/lists/* \
